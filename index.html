@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kingdom Vizion Studio - Impulsa tu Marca</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#0f0f0f;
+    color:white;
+}
+
+header{
+    background:linear-gradient(135deg,#6a00ff,#ff00c8);
+    text-align:center;
+    padding:80px 20px;
+}
+
+h1{
+    font-size:42px;
+    margin:0;
+}
+
+.hero-text{
+    font-size:20px;
+    margin:20px 0;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 35px;
+    background:white;
+    color:#6a00ff;
+    font-weight:bold;
+    text-decoration:none;
+    border-radius:30px;
+    margin-top:20px;
+}
+
+section{
+    padding:60px 20px;
+    text-align:center;
+}
+
+.services{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.card{
+    background:#1c1c1c;
+    padding:25px;
+    width:260px;
+    border-radius:15px;
+}
+
+.cta{
+    background:#6a00ff;
+    padding:60px 20px;
+}
+
+footer{
+    background:black;
+    padding:20px;
+    text-align:center;
+    font-size:14px;
+}
+
+/* BOTÓN WHATSAPP PRO */
+.whatsapp-btn{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    width:60px;
+    height:60px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    text-decoration:none;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+    z-index:1000;
+    animation:pulse 1.5s infinite;
+}
+
+.whatsapp-btn img{
+    width:35px;
+}
+
+@keyframes pulse{
+    0%{ box-shadow:0 0 0 0 rgba(37,211,102,0.7);}
+    70%{ box-shadow:0 0 0 15px rgba(37,211,102,0);}
+    100%{ box-shadow:0 0 0 0 rgba(37,211,102,0);}
+}
+
+@media (max-width:600px){
+    h1{
+        font-size:28px;
+    }
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <h1>Tu Marca Está Invisible.</h1>
+    <p class="hero-text">Nosotros la convertimos en una máquina de atraer clientes.</p>
+    <a href="#contacto" class="btn">QUIERO CRECER MI NEGOCIO</a>
+</header>
+
+<section>
+    <h2>¿Qué hacemos diferente?</h2>
+    <p>No solo diseñamos… creamos estrategias visuales que venden.</p>
+</section>
+
+<section>
+    <h2>Servicios que generan resultados</h2>
+    <div class="services">
+        <div class="card">
+            <h3>Identidad Poderosa</h3>
+            <p>Logos y branding que posicionan tu negocio.</p>
+        </div>
+        <div class="card">
+            <h3>Publicidad Estratégica</h3>
+            <p>Anuncios diseñados para convertir.</p>
+        </div>
+        <div class="card">
+            <h3>Marketing Digital</h3>
+            <p>Presencia online que genera ingresos.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Lo que dicen nuestros clientes</h2>
+    <div class="services">
+        <div class="card">
+            <p>"Mi negocio pasó de verse amateur a verse profesional en una semana. 
+            Las ventas aumentaron y ahora la gente confía más en mi marca."</p>
+            <strong>- Carlos M.</strong>
+        </div>
+
+        <div class="card">
+            <p>"La publicidad que hicieron para mi negocio realmente convirtió. 
+            No fue solo diseño, fue estrategia."</p>
+            <strong>- Mariana R.</strong>
+        </div>
+
+        <div class="card">
+            <p>"Invertir en Kingdom Vizion Studio fue la mejor decisión para mi marca. 
+            Ahora destacamos frente a la competencia."</p>
+            <strong>- José L.</strong>
+        </div>
+    </div>
+</section>
+
+<section class="cta">
+    <h2>Deja de perder clientes.</h2>
+    <p>Empieza a dominar tu mercado hoy.</p>
+    <a href="#contacto" class="btn">AGENDA TU CONSULTA</a>
+</section>
+
+<section id="contacto">
+    <h2>Contacto</h2>
+    <p>Email: contacto@kingdomvizion.com</p>
+    <p>WhatsApp: +52 868 000 0000</p>
+</section>
+
+<footer>
+    © 2026 Kingdom Vizion Studio - Todos los derechos reservados
+</footer>
+
+<!-- BOTÓN WHATSAPP PRO -->
+<a href="https://wa.me/528681837545?text=Hola%20quiero%20información%20sobre%20sus%20servicios%20de%20diseño%20y%20marketing"
+   class="whatsapp-btn"
+   target="_blank">
+   <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+</a>
+
+</body>
+</html>
