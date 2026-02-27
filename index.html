@@ -16,7 +16,18 @@ header{
     text-align:center;
     padding:50px 20px;
 }
-header img{
+header img{.logo {
+    width:350px;          /* tamaño más grande */
+    max-width:90%;        /* que no se salga de móviles */
+    display:block;
+    margin:0 auto 20px;   /* centrado horizontal + espacio abajo */
+    transition: transform 0.3s; /* efecto hover opcional */
+}
+
+/* Opcional: efecto “crece al pasar mouse” */
+.logo:hover {
+    transform: scale(1.1);
+}
     width:180px;
     margin-bottom:20px;
 }
@@ -76,7 +87,9 @@ img.banner{
 
 <header>
   <!-- Logo -->
-  <img src="-removebg-preview.png" alt="Kingdom Vizion Studio Logo">
+  <div style="background:white; display:inline-block; padding:15px; border-radius:12px; margin-bottom:20px;">
+  <img src="-removebg-preview.png" alt="Kingdom Vizion Studio Logo" class="logo">
+</div>
 
   <h1>Tu Marca Está Invisible.</h1>
   <p class="hero-text">Nosotros la convertimos en una máquina de atraer clientes.</p>
@@ -122,8 +135,8 @@ img.banner{
 
 <section id="contacto">
   <h2>Contacto</h2>
-  <p>Email: contacto@kingdomvizion.com</p>
-  <p>WhatsApp: +52 868 000 0000</p>
+  <p>Email: contacto@kingdomvzb.com</p>
+  <p>WhatsApp: +52 868 183 7545</p>
 </section>
 
 <footer>
