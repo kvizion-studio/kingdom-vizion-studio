@@ -1,0 +1,18 @@
+{
+  "name": "NCCM · Nueva Creación",
+  "short_name": "NCCM",
+  "description": "Comunidad, fe y propósito en un solo lugar.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#070707",
+  "theme_color": "#0a0a0a",
+  "lang": "es",
+  "icons": [
+    {
+      "src": "assets/monogram.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

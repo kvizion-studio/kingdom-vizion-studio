@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#0a0a0a">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="description" content="NCCM — Nueva Creación. Comunidad, fe y propósito en un solo lugar.">
+  <title>NCCM · Nueva Creación</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/monogram.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app" id="app">
+    <!-- Splash -->
+    <div class="splash" id="splash" aria-hidden="true">
+      <img src="assets/monogram.png" alt="" class="splash__mark">
+      <p class="splash__brand">NCCM</p>
+      <p class="splash__tag">Nueva Creación</p>
+    </div>
+
+    <!-- Screens -->
+    <main class="screens">
+      <!-- INICIO -->
+      <section class="screen screen--active" id="screen-inicio" data-screen="inicio">
+        <header class="topbar">
+          <div class="topbar__brand">
+            <img src="assets/monogram.png" alt="" class="topbar__mark">
+            <div>
+              <p class="topbar__name">NCCM</p>
+              <p class="topbar__sub">Nueva Creación</p>
+            </div>
+          </div>
+          <button type="button" class="icon-btn" data-nav="mas" aria-label="Más opciones">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="5" r="1.2"/><circle cx="12" cy="12" r="1.2"/><circle cx="12" cy="19" r="1.2"/></svg>
+          </button>
+        </header>
+
+        <div class="hero">
+          <div class="hero__media" role="img" aria-label="Identidad NCCM">
+            <img src="assets/hero.jpeg" alt="NCCM — identidad visual">
+            <div class="hero__veil"></div>
+          </div>
+          <div class="hero__copy">
+            <p class="eyebrow">Bienvenido</p>
+            <h1>Fe que se vive<br>en comunidad</h1>
+            <p class="lede">Un espacio digital para crecer, servir y caminar juntos.</p>
+            <div class="cta-row">
+              <button type="button" class="btn btn--gold" data-nav="servicios">Ver horarios</button>
+              <a class="btn btn--ghost" href="https://wa.me/528681837545" target="_blank" rel="noopener">WhatsApp</a>
+            </div>
+          </div>
+        </div>
+
+        <section class="block">
+          <div class="block__head">
+            <h2>Esta semana</h2>
+            <button type="button" class="text-link" data-nav="eventos">Ver todo</button>
+          </div>
+          <div class="rail" role="list">
+            <article class="rail-card" role="listitem">
+              <p class="rail-card__day">Dom</p>
+              <p class="rail-card__title">Culto de celebración</p>
+              <p class="rail-card__meta">10:00 · Santuario</p>
+            </article>
+            <article class="rail-card" role="listitem">
+              <p class="rail-card__day">Mié</p>
+              <p class="rail-card__title">Oración y palabra</p>
+              <p class="rail-card__meta">19:00 · Salón principal</p>
+            </article>
+            <article class="rail-card" role="listitem">
+              <p class="rail-card__day">Vie</p>
+              <p class="rail-card__title">Jóvenes NCCM</p>
+              <p class="rail-card__meta">18:30 · Terraza</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="block block--last">
+          <div class="block__head">
+            <h2>Accesos rápidos</h2>
+          </div>
+          <div class="quick">
+            <button type="button" class="quick__item" data-nav="servicios">
+              <span class="quick__icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l2.5 2.5"/></svg>
+              </span>
+              <span>Horarios</span>
+            </button>
+            <button type="button" class="quick__item" data-nav="ministerios">
+              <span class="quick__icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3l2.2 4.6L19 8.3l-3.5 3.4.8 4.8L12 14.8 7.7 16.5l.8-4.8L5 8.3l4.8-.7L12 3z"/></svg>
+              </span>
+              <span>Ministerios</span>
+            </button>
+            <button type="button" class="quick__item" data-nav="eventos">
+              <span class="quick__icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M8 3v4M16 3v4M4 10h16"/></svg>
+              </span>
+              <span>Eventos</span>
+            </button>
+            <a class="quick__item" href="https://wa.me/528681837545?text=Hola%20NCCM" target="_blank" rel="noopener">
+              <span class="quick__icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/></svg>
+              </span>
+              <span>Contacto</span>
+            </a>
+          </div>
+        </section>
+      </section>
+
+      <!-- SERVICIOS -->
+      <section class="screen" id="screen-servicios" data-screen="servicios" hidden>
+        <header class="page-head">
+          <h1>Horarios</h1>
+          <p>Encuentros semanales de la comunidad.</p>
+        </header>
+        <ul class="list">
+          <li class="list__item">
+            <div>
+              <p class="list__title">Culto dominical</p>
+              <p class="list__meta">Celebración · Adoración · Palabra</p>
+            </div>
+            <p class="list__time">Dom · 10:00</p>
+          </li>
+          <li class="list__item">
+            <div>
+              <p class="list__title">Escuela bíblica</p>
+              <p class="list__meta">Niños, jóvenes y adultos</p>
+            </div>
+            <p class="list__time">Dom · 09:00</p>
+          </li>
+          <li class="list__item">
+            <div>
+              <p class="list__title">Oración midweek</p>
+              <p class="list__meta">Intercesión y estudio</p>
+            </div>
+            <p class="list__time">Mié · 19:00</p>
+          </li>
+          <li class="list__item">
+            <div>
+              <p class="list__title">Jóvenes NCCM</p>
+              <p class="list__meta">Comunidad y discipulado</p>
+            </div>
+            <p class="list__time">Vie · 18:30</p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- MINISTERIOS -->
+      <section class="screen" id="screen-ministerios" data-screen="ministerios" hidden>
+        <header class="page-head">
+          <h1>Ministerios</h1>
+          <p>Espacios para servir y crecer juntos.</p>
+        </header>
+        <div class="stack">
+          <article class="panel">
+            <h2>Familias</h2>
+            <p>Acompañamiento pastoral y recursos para el hogar.</p>
+          </article>
+          <article class="panel">
+            <h2>Jóvenes</h2>
+            <p>Identidad, liderazgo y fe con propósito.</p>
+          </article>
+          <article class="panel">
+            <h2>Adoración</h2>
+            <p>Música, atmósfera y encuentro con Dios.</p>
+          </article>
+          <article class="panel">
+            <h2>Servicio</h2>
+            <p>Alcance local y proyectos de impacto comunitario.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- EVENTOS -->
+      <section class="screen" id="screen-eventos" data-screen="eventos" hidden>
+        <header class="page-head">
+          <h1>Eventos</h1>
+          <p>Próximas citas de la comunidad.</p>
+        </header>
+        <div class="stack">
+          <article class="event">
+            <div class="event__date">
+              <span class="event__month">Jul</span>
+              <span class="event__day">20</span>
+            </div>
+            <div>
+              <h2>Noche de adoración</h2>
+              <p>19:00 · Santuario principal</p>
+            </div>
+          </article>
+          <article class="event">
+            <div class="event__date">
+              <span class="event__month">Ago</span>
+              <span class="event__day">03</span>
+            </div>
+            <div>
+              <h2>Retiro de jóvenes</h2>
+              <p>Todo el día · Inscripción abierta</p>
+            </div>
+          </article>
+          <article class="event">
+            <div class="event__date">
+              <span class="event__month">Ago</span>
+              <span class="event__day">17</span>
+            </div>
+            <div>
+              <h2>Escuela de líderes</h2>
+              <p>11:00 · Salón de formación</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- MÁS -->
+      <section class="screen" id="screen-mas" data-screen="mas" hidden>
+        <header class="page-head">
+          <h1>Más</h1>
+          <p>Información y contacto.</p>
+        </header>
+        <div class="stack">
+          <article class="panel panel--brand">
+            <img src="assets/logo.png" alt="Kingdom Vizion Studio" class="panel__logo">
+            <p class="panel__kicker">Diseñado por</p>
+            <h2>Kingdom Vizion Studio</h2>
+            <p>Creatividad con propósito de Reino.</p>
+          </article>
+          <a class="row-link" href="mailto:contacto@kingdomvzb.com">
+            <span>Email</span>
+            <span class="row-link__val">contacto@kingdomvzb.com</span>
+          </a>
+          <a class="row-link" href="https://wa.me/528681837545" target="_blank" rel="noopener">
+            <span>WhatsApp</span>
+            <span class="row-link__val">+52 868 183 7545</span>
+          </a>
+          <p class="footnote">© 2026 NCCM · Entrega Kingdom Vizion Studio</p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Bottom nav -->
+    <nav class="tabbar" aria-label="Navegación principal">
+      <button type="button" class="tab tab--active" data-nav="inicio" aria-current="page">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 10.5 12 4l8 6.5V20a1 1 0 0 1-1 1h-5v-6H10v6H5a1 1 0 0 1-1-1v-9.5z"/></svg>
+        <span>Inicio</span>
+      </button>
+      <button type="button" class="tab" data-nav="servicios">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l2.5 2.5"/></svg>
+        <span>Horarios</span>
+      </button>
+      <button type="button" class="tab" data-nav="ministerios">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3l2.2 4.6L19 8.3l-3.5 3.4.8 4.8L12 14.8 7.7 16.5l.8-4.8L5 8.3l4.8-.7L12 3z"/></svg>
+        <span>Ministerios</span>
+      </button>
+      <button type="button" class="tab" data-nav="eventos">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M8 3v4M16 3v4M4 10h16"/></svg>
+        <span>Eventos</span>
+      </button>
+      <button type="button" class="tab" data-nav="mas">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="8"/><path d="M8 12h8M12 8v8"/></svg>
+        <span>Más</span>
+      </button>
+    </nav>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
