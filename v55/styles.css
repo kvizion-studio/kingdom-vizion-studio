@@ -656,6 +656,15 @@ a {
   }
 }
 
+@keyframes rise-soft {
+  from {
+    transform: translateY(12px);
+  }
+  to {
+    transform: none;
+  }
+}
+
 @keyframes load {
   from {
     transform: translateX(-20%);
